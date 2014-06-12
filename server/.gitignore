@@ -1,0 +1,18 @@
+# Virtualenv
+_env/
+
+*.py[co]
+
+# Installer logs
+pip-log.txt
+
+# MacOSX
+.DS_Store
+
+# storage
+storage.txt
+
+# Protecting Dropbox's Info
+routers.txt
+walls
+wifi_calibration

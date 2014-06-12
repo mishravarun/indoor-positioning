@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".StartLocating" >
+
+    <TextView
+        android:id="@+id/extractor_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/start_push"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stop_pushing"
+        android:layout_alignParentRight="true"
+        android:text="Start Pushing" />
+
+    <Button
+        android:id="@+id/stop_pushing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/start_push"
+        android:layout_alignRight="@+id/start_push"
+        android:layout_centerVertical="true"
+        android:text="Stop Pushing" />
+
+    <Button
+        android:id="@+id/dwabtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/wce"
+        android:text="DWA" />
+
+    <Button
+        android:id="@+id/wce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/extractor_text"
+        android:text="WCE" />
+
+    <Button
+        android:id="@+id/reset_particles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stop_pushing"
+        android:layout_alignRight="@+id/stop_pushing"
+        android:layout_below="@+id/stop_pushing"
+        android:text="Reset Particles" />
+
+</RelativeLayout>
